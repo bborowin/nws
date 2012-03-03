@@ -9,7 +9,6 @@ from BeautifulSoup import BeautifulSoup
 #from django.core import serializers
 import simplejson as json
 
-
 # registers parser for a given source
 class Source(models.Model):
   url_base = models.URLField() # base url for the news source
