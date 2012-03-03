@@ -33,9 +33,12 @@ class Story(models.Model):
   url = models.URLField()
   timestamp = models.DateTimeField(default=datetime.now())
   title = models.CharField(max_length = 250)
-  source = models.CharField(max_length = 50)
+  source = models.ForeignKey(Source)
   html = models.TextField()
   body = models.TextField()
+
+  def __unicode__( self ):
+        return self.title
 
   def untag(self, item, tag, recursive = False):
     tags = item.findAll(tag, recursive=recursive)
