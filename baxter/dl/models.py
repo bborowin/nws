@@ -1,3 +1,7 @@
+"""
+  Structures and logic used to extract article [meta]data from an online news source
+"""
+
 from django.db import models
 from datetime import datetime
 import urllib2
@@ -5,10 +9,17 @@ from BeautifulSoup import BeautifulSoup
 #from django.core import serializers
 import simplejson as json
 
-# parser for a given source - instance values drive simple scripting
+
+# registers parser for a given source
 class Source(models.Model):
-  url = models.URLField()
-  format = models.TextField(empty = True) # optional format string (for dates etc)
+  url_base = models.URLField() # base url for the news source
+  name = models.CharField(max_length = 250) # name of the news source
+  
+
+# series of extraction steps associated with a parser
+class ExtractCmd(models.Model):
+  source = models.ForeignKey(Source) # parser relation
+  order = models.IntegerField() # used to sequence extraction commands
   data = models.CharField() # describes kind of data being extracted
   tag = models.CharField() # html tag to target
   attribute = models.CharField() # attribute type and name
@@ -107,11 +118,6 @@ class Philly(Story):
   def process(self):
     self.source = 'Philly'
     super(Philly, self).process()
-
-#  def get_timestamp(self, soup):
-#    text = self.compact(soup.findAll('div', attrs={'class': 'article_timestamp'}))
-#    text = datetime.strptime(text, 'Posted: %a, %b. %d, %Y, %I:%M %p')
-#    return text
 
   def get_title(self, soup):
     text = soup.findAll('h1', attrs={'class': 'entry-title'})
