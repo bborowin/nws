@@ -19,10 +19,10 @@ class Source(models.Model):
 class ExtractCmd(models.Model):
   source = models.ForeignKey(Source) # parser relation
   order = models.IntegerField() # used to sequence extraction commands
-  data = models.CharField() # describes kind of data being extracted
-  tag = models.CharField() # html tag to target
-  attribute = models.CharField() # attribute type and name
-  action  = models.CharField() # soup action (findall, extract, etc)
+  data = models.CharField(max_length = 250) # describes kind of data being extracted
+  tag = models.CharField(max_length = 50) # html tag to target
+  attribute = models.CharField(max_length = 250) # attribute type and name
+  action  = models.CharField(max_length = 50) # soup action (findall, extract, etc)
   
 
 # base class for obtaining stories from news sources
