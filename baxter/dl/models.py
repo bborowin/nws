@@ -13,7 +13,10 @@ import simplejson as json
 class Source(models.Model):
   url_base = models.URLField() # base url for the news source
   name = models.CharField(max_length = 250) # name of the news source
-  
+
+  def __unicode__( self ):
+        return self.name
+
 
 # series of extraction steps associated with a parser
 class ExtractCmd(models.Model):
