@@ -18,15 +18,20 @@ class Source(models.Model):
         return self.name
 
 
+# used to define extractable elements
+class StoryElement(models.Model):
+  name = models.CharField(max_length = 50)
+  
+
 # series of extraction steps associated with a parser
 class ExtractCmd(models.Model):
   source = models.ForeignKey(Source) # parser relation
+  element = models.ForeignKey(StoryElement) # describes kind of data being extracted
   order = models.IntegerField() # used to sequence extraction commands
-  data = models.CharField(max_length = 250) # describes kind of data being extracted
   tag = models.CharField(max_length = 50) # html tag to target
   attribute = models.CharField(max_length = 250) # attribute type and name
   action  = models.CharField(max_length = 50) # soup action (findall, extract, etc)
-  
+
 
 # base class for obtaining stories from news sources
 class Story(models.Model):
@@ -38,7 +43,7 @@ class Story(models.Model):
   body = models.TextField()
 
   def __unicode__( self ):
-        return self.title
+    return '%s:%s' % (self.source.name, self.title)
 
   def untag(self, item, tag, recursive = False):
     tags = item.findAll(tag, recursive=recursive)
