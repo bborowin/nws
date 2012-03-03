@@ -5,15 +5,6 @@ from BeautifulSoup import BeautifulSoup
 #from django.core import serializers
 import simplejson as json
 
-# parser for a given source - instance values drive simple scripting
-class Source(models.Model):
-  url = models.URLField()
-  format = models.TextField(empty = True) # optional format string (for dates etc)
-  data = models.CharField() # describes kind of data being extracted
-  tag = models.CharField() # html tag to target
-  attribute = models.CharField() # attribute type and name
-  action  = models.CharField() # soup action (findall, extract, etc)
-  
 
 # base class for obtaining stories from news sources
 class Story(models.Model):
