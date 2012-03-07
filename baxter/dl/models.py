@@ -61,6 +61,7 @@ class ParserCmd(ExtractCmd):
 
 # series of BeautifulSoup extraction instructions
 class SoupCmd(ExtractCmd):
+  action = models.CharField(max_length = 50, default='findAll') # soup action to perform
   tag = models.CharField(max_length = 50) # html tag to target
   attribute = models.CharField(max_length = 250) # attribute type and name
 
