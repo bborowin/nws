@@ -9,7 +9,7 @@ from BeautifulSoup import BeautifulSoup
 #from django.core import serializers
 import simplejson as json
 
-# registers parser for a given source
+# registers a parser for a given source
 class Source(models.Model):
   url_base = models.URLField() # base url for the news source
   name = models.CharField(max_length = 250) # name of the news source
@@ -21,17 +21,57 @@ class Source(models.Model):
 # used to define extractable elements
 class StoryElement(models.Model):
   name = models.CharField(max_length = 50)
-  
 
-# series of extraction steps associated with a parser
+  def __unicode__( self ):
+    return self.name
+
+
+# base class for data extraction commands
 class ExtractCmd(models.Model):
   source = models.ForeignKey(Source) # parser relation
-  element = models.ForeignKey(StoryElement) # describes kind of data being extracted
   order = models.IntegerField() # used to sequence extraction commands
+  element = models.ForeignKey(StoryElement) # element being extracted
+  target =  models.CharField(max_length = 500, default='target') # dictionary key for command result
+
+  def run(data):
+    pass
+
+
+# instructions used to combine extracted soup bits into story elements
+class ParserCmd(ExtractCmd):
+  operator = models.CharField(max_length = 50) # command to perform
+  operands =  models.CharField(max_length = 500) # list of comma-separated dictionary keys for operands
+
+  def __unicode__( self ):
+    return '%s: %s -> %s' % (self.command, self.source, self.target)
+
+  def run(data):
+    # concatenate values and store under new key
+    if 'join' == self.operator:
+      keys = self.operands.split(',')
+      subset = []
+      for key in keys:
+        subset.append(data[key])
+      data[self.target] = ''.join(subset)
+    # format date using format string
+    elif 'strptime' == self.operator:
+      keys = self.operands.split(',')
+      data[target] = datetime.strptime(data[keys[1]], data[keys[0]])
+  
+
+# series of BeautifulSoup extraction instructions
+class SoupCmd(ExtractCmd):
   tag = models.CharField(max_length = 50) # html tag to target
   attribute = models.CharField(max_length = 250) # attribute type and name
-  action  = models.CharField(max_length = 50) # soup action (findall, extract, etc)
 
+  def __unicode__( self ):
+    return '%s: %s (%d)' % (self.source.name, self.element.name, self.order)
+
+  def extract(soup):
+    if 'findAll' == self.operator:
+      pass
+    elif 'extract' == self.operator:
+      pass
 
 # base class for obtaining stories from news sources
 class Story(models.Model):
