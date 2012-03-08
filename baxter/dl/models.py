@@ -13,9 +13,10 @@ import simplejson as json
 class Source(models.Model):
   url_base = models.URLField() # base url for the news source
   name = models.CharField(max_length = 250) # name of the news source
+  short_name = models.CharField(max_length = 10) # abbreviated source name
 
   def __unicode__( self ):
-        return self.name
+    return self.name
 
 
 # used to define extractable elements
@@ -32,20 +33,22 @@ class ExtractCmd(models.Model):
   order = models.IntegerField() # used to sequence extraction commands
   element = models.ForeignKey(StoryElement) # element being extracted
   target =  models.CharField(max_length = 500, default='target') # dictionary key for command result
+  operator = models.CharField(max_length = 50, null=True) # command to perform
+  operands =  models.CharField(max_length = 500, null=True) # list of space-separated dictionary keys for operands
 
-  def run(data):
+  def __unicode__( self ):
+    return '[%s/%s] %s: %s -> %s (%d)' % (self.source.short_name, self.element.name, self.operator, self.operands, self.target, self.order)
+
+  def run(self, data, soup=None):
     pass
 
 
 # instructions used to combine extracted soup bits into story elements
 class ParserCmd(ExtractCmd):
-  operator = models.CharField(max_length = 50) # command to perform
-  operands =  models.CharField(max_length = 500) # list of comma-separated dictionary keys for operands
+  class Meta:
+    proxy = True
 
-  def __unicode__( self ):
-    return '%s: %s -> %s' % (self.command, self.source, self.target)
-
-  def run(data):
+  def run(self, data, soup=None):
     # concatenate values and store under new key
     if 'join' == self.operator:
       keys = self.operands.split(',')
@@ -55,24 +58,34 @@ class ParserCmd(ExtractCmd):
       data[self.target] = ''.join(subset)
     # format date using format string
     elif 'strptime' == self.operator:
-      keys = self.operands.split(',')
+      keys = self.operands.split(' ')
       data[target] = datetime.strptime(data[keys[1]], data[keys[0]])
   
 
 # series of BeautifulSoup extraction instructions
 class SoupCmd(ExtractCmd):
-  action = models.CharField(max_length = 50, default='findAll') # soup action to perform
-  tag = models.CharField(max_length = 50) # html tag to target
-  attribute = models.CharField(max_length = 250) # attribute type and name
+  class Meta:
+    proxy = True
 
-  def __unicode__( self ):
-    return '%s: %s (%d)' % (self.source.name, self.element.name, self.order)
-
-  def extract(soup):
+  def run(self, data, soup):
     if 'findAll' == self.operator:
+      attr = operands.split(' ')
+      data[self.target] = soup.findAll(attr[0], attrs={attr[1]: attr[2]})
       pass
     elif 'extract' == self.operator:
+      attr = operands.split(' ')
+      remove = soup.findAll(attr[0], attrs={attr[1]: attr[2]})
+      remove[0].extract()
       pass
+
+
+  def get_body(self, soup):
+    byline = soup.findAll('div', attrs={'class': 'bylineComments'})
+    byline[0].extract()
+    text = soup.findAll('div', attrs={'class': 'story'})
+    text = text[0].findAll('p')
+    return self.compact(text)
+
 
 # base class for obtaining stories from news sources
 class Story(models.Model):
