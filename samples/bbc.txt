@@ -1,0 +1,183 @@
+<div class="story-body">
+<span class="story-date">
+<span class="date">
+             17 January 2012
+            </span>
+<span class="time-text">
+             Last updated at
+            </span>
+<span class="time">
+             10:00 ET
+            </span>
+</span>
+
+
+<h1 class="story-header">
+            Ethiopia forces thousands off land - Human Rights Watch
+           </h1>
+<div class="caption body-narrow-width">
+<img src="http://news.bbcimg.co.uk/media/images/57938000/jpg/_57938113_gambella.jpg" width="304" height="171" alt="Village of Bildak in Ethiopia's Gambella region (Pic courtesy of HRW)" />
+<span style="width:304px;">
+             This new village had to be abandoned because there was no water source for cattle, HRW says
+            </span>
+</div>
+<div class="story-feature related narrow">
+<a class="hidden" href="#story_continues_1">
+             Continue reading the main story
+            </a>
+<h2>
+             Related Stories
+            </h2>
+<ul class="related-links-list">
+<li>
+<a href="/news/business-13725431">
+               Ethiopia claims 'land grabs' benefits
+              </a>
+</li>
+<li>
+<a href="/news/world-africa-13688683">
+               Hedge funds 'grab' Africa's land
+              </a>
+</li>
+<li>
+<a href="/news/business-13567059">
+               Is the global food system slowly breaking down?
+              </a>
+</li>
+</ul>
+</div>
+<p class="introduction" id="story_continues_1">
+            Ethiopia's government has been accused of forcing tens of thousands of people off their land so it can be leased to foreign investors.
+           </p>
+<p>
+            US-based Human Rights Watch says people are being forcibly relocated to new villages that lack adequate food, farmland and facilities.
+           </p>
+<p>
+            Ethiopia has already leased out more than 3.6 million hectares (8.8m acres) of land - an area the size of The Netherlands - HRW says.
+           </p>
+<p>
+            Addis Ababa rejects HRW's allegations.
+           </p>
+<p>
+            "I can tell you that it is baseless - on both grounds - on both the land grab issue and resettlement of the people," Ethiopian Information Minister Bereket Simon told the BBC World Service.
+           </p>
+<p>
+            "No-one is forced [to leave their homes]. This is an absolute lie. The people around Gambella are inhabiting the place in a very scattered manner."
+           </p>
+<p>
+            "It is true that we are providing access to land on a lease basis for 25 years for local and foreign developers. We have about three million hectares of land which is not inhabited by anybody."
+           </p>
+<span class="cross-head">
+            'Weaker and weaker'
+           </span>
+<p>
+            HRW says it has evidence that some 70,000 indigenous people in the western Gambella region were relocated against their will to new villages that "lack adequate food, farmland, healthcare and educational facilities".
+           </p>
+<p>
+            The group said it spoke to more than 100 people in
+            <a href="http://www.hrw.org/news/2012/01/16/ethiopia-forced-relocations-bring-hunger-hardship" title="HRW report">
+             May and June last year for the report
+            </a>
+            .
+           </p>
+<!--  Embedding the audio player -->
+<!--  This is the embedded player component -->
+<div class="audioInStoryC">
+<div id="emp-16594134-62608" class="emp">
+<noscript>
+<div class="warning">
+<img class="holding" src="http://news.bbcimg.co.uk/media/images/57930000/jpg/_57930793_000137566.jpg" alt="Ethiopian farmers (archive photo)" />
+<p>
+<strong>
+                 Please turn on JavaScript.
+                </strong>
+                Media requires JavaScript to play.
+               </p>
+</div>
+</noscript>
+<object width="0" height="0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</object>
+<!-- embedding script -->
+
+</div>
+</div>
+<!-- end of the embedded player component -->
+<!-- Player embedded -->
+<p>
+            "My father was beaten for refusing to go along [to the new village] with some other elders," a former villager told HRW.
+           </p>
+<p>
+            "He said: 'I was born here - my children were born here - I am too old to move so I will stay'. He was beaten by the army with sticks and the butt of a gun.
+           </p>
+<p>
+            "He had to be taken to hospital. He died because of the beating - he just became weaker and weaker."
+           </p>
+<p>
+            HRW says that the residents of Gambella have never had formal title to the land they lived on and used - and the government often claimed the areas are "uninhabited" or "under-utilised".
+           </p>
+<p>
+            That claim, HRW says, enables the government to bypass constitutional provisions and laws that would protect these populations from being relocated.
+           </p>
+<p>
+            The government in Addis Ababa has said in the past that all the moves are voluntary, the new villages will have adequate infrastructure and everyone who moves will be given assistance to help their transition to a new livelihood.
+           </p>
+<div class="caption body-narrow-width">
+<img src="http://news.bbcimg.co.uk/media/images/57926000/gif/_57926755_ethiopia_gambella_0112.gif" width="304" height="171" alt="Map" />
+</div>
+<p>
+            But HRW says many of the new villages have no access to government services at all, and people are arriving at the worst time of year - the beginning of the harvest - to find the land has not been cleared and prepared for growing.
+           </p>
+<p>
+            "The government failure to provide food assistance for relocated people has caused endemic hunger and cases of starvation," HRW says.
+           </p>
+<p>
+            Magn Nyang, who lives in Minneapolis in the US, says his mother was forcibly re-settled from a village close to Gambella town to a camp.
+           </p>
+<p>
+            "When the investors came in they took over the land and they [the villagers] were kicked out," he told the BBC World Service.
+           </p>
+<p>
+            "They were relocated under the pretext that they were going to get clean water, health clinics built for them, schools for their children - but none of that happened."
+           </p>
+<span class="cross-head">
+            Food crisis
+           </span>
+<p>
+            The Oakland Institute, a US think tank that released a report last year about foreign firms acquiring land in Africa, described the situation as a "land rush".
+           </p>
+<p>
+            "Hundreds of investors from all over the world rushing to Africa - lured by cheap land prices, availability of land - all for the sake of taking over these productive lands to be able to grow foods for exports," Anuradha Mittal, Oakland Institute's executive director, told the BBC.
+           </p>
+<p>
+            "Our research - and reports by other human rights organisations - shows that this is happening at the expense of the most vulnerable people," she said.
+           </p>
+<p>
+            BBC business reporter Duncan Bartlett reported in June 2011 that Saudi Arabia and China planned to acquire large tracts of land, particularly in Gambella, to grow more than one million tonnes of rice to take back to their own countries.
+           </p>
+<p>
+            Ethiopia's Deputy Prime Minister and Minister of Foreign Affairs Hailemariam Desalegn told him the arrangement was an advantage to the country.
+           </p>
+<p>
+            He said the area being leased is lowland, where farmers are not willing to go and plough the land. It is often infested with malaria and the climate made it unsuitable for small holder farmers.
+           </p>
+<p>
+            And he denied it would lead to food shortages and higher prices in a part of the world already suffering from a food crisis.
+           </p>
+<p>
+            "Small holder farmers feed themselves first and sell when there is a marketable surplus," he said, adding that government subsidies helped those in urban areas.
+           </p>
+</div>

@@ -1,0 +1,16 @@
+{
+	"sources": [
+		{
+			"name":"",
+			"url":""
+		},
+		{
+			"name":"BBC",
+			"url":"http://www.bbc.co.uk/news/"
+		},
+		{
+			"name":"CBC",
+			"url":"http://www.cbc.ca/news/"
+		}
+	]
+}

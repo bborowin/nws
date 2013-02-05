@@ -1,0 +1,27 @@
+A one-year, 2,800-vehicle test began yesterday on the streets of Ann Arbor, Mich., to help federal officials decide whether to require new technology that would help drivers avoid crashes, congestion and hazards.
+
+Battelle scientists are helping with four parts of the massive road test spearheaded by the U.S. Department of Transportation and the University of Michigan. The parts involve adding vehicle-to-vehicle communication equipment to transit buses and commercial trucks, monitoring how drivers interact with data they’re given, and installing traffic signals that share information with passing traffic.
+
+Ben Pierce, a transportation researcher at the Columbus-based Battelle research institute, said the technology could have a dramatic impact on safety by alerting drivers to hazards such as ice on roads and pedestrians in crosswalks. It also could help alleviate some of our biggest travel headaches by providing real-time advisories about crashes and backups that waste time and gas.
+
+“It’s really the penicillin of the transportation industry,” Pierce said.
+
+Eight automakers, including General Motors, Ford and Honda, have supplied the 2,800 vehicles for the test, which is the largest of its kind.
+
+Most of the vehicles in the test have an aftermarket device that emits a wireless signal to connect with other vehicles. A vis-ual message or a beep will alert drivers to a potential crash. The vehicles also will be able to communicate with roadside devices in 29 areas in Ann Arbor.
+
+The ability of vehicles to keep track of one another’s whereabouts and warn drivers of potential hazards might avoid or reduce the severity of four out of five crashes that occur when the driver is not impaired, according to studies by the National Highway Traffic Safety Administration.
+
+“This is a big deal, and I think everybody here believes this has a lot of promise,” Transportation Secretary Ray LaHood told reporters in Ann Arbor yesterday.
+
+Among the situations where the technology could come in handy, Pierce said: Cars involved in crashes or stuck in heavy traffic could warn drivers farther back to find an alternative route, and a car that skids on a patch of ice could automatically send out a signal to others approaching the area.
+
+The cars, trucks and buses will be driven in Ann Arbor, a college town of nearly 28 square miles with a population of nearly 115,000.
+
+LaHood said safety regulators will not decide the technology’s future until next year. The test will cost $25 million, with 80 percent of the money coming from the department.
+
+Before Battelle installed the technology on buses and trucks in Ann Arbor, researchers tested their devices on Central Ohio Transit Authority buses in a Columbus parking lot.
+
+Pierce said Battelle researchers studying how drivers use the new information want to make sure that people aren’t overwhelmed with data.
+
+Information from the Associated Press was included in this story.
